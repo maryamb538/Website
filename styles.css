@@ -1,0 +1,455 @@
+
+/* #ee4a86*/
+/* rgb(19, 139, 133) */
+/* rgb(19, 101, 139) */
+:root {
+    --text-color: #1a1c20;
+    --link-color: #4a83ee;
+    --background-color: #eeeff1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+ scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Abril Fatface', sans-serif ;
+    background-color: whitesmoke;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+ a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+/* Navbar*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding:0 50px;
+    height:80px;
+    align-items: center;
+
+}
+nav .left a{
+color: var(--text-color);
+font-size: 22px;
+font-weight: 400;
+}
+
+nav .right a{
+    color: var(--text-color);
+    margin:0 10px;
+    }
+    
+nav .right a:last-child {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+nav .right a span{
+    margin-left: 5px;
+}
+
+/* Section1:Hero */
+.hero-section {
+display: flex;
+justify-content: space-between;
+padding: 0 50px;
+margin: 50px 0;
+align-items: center;
+margin-bottom: 150px;
+margin-left: 20px;
+margin-right: 20px;
+box-shadow:
+    inset 0 -3em 3em rgba(0, 67, 200, 0.3),
+    0 0 0 2px white,
+    0.3em 0.3em 1em black;
+gap: 40px;
+background-color: var(--text-color);
+}
+
+
+.hero-section .text {
+flex: 5;
+color: var(--background-color);
+
+}
+
+.hero-section .text h2{
+    font-size:45px ;
+    margin-bottom: 20px;
+    }
+
+
+.hero-section .text .links {
+margin-top: 25px;
+margin-bottom: 25px;
+}
+.hero-section .text .links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+}
+
+.hero-section .text .links a:hover {
+color: var(--background-color);
+border: 2px solid var(--background-color);
+}
+
+
+
+
+.hero-section .headshot {
+    flex: 2;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.hero-section .headshot img {
+    border-radius: 50%;
+    width: 350px;
+}
+
+/* Section 2:skills*/
+
+.skills-section{
+padding: 0 50px;
+margin-bottom: 100px;
+
+}
+
+.skills-section h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+
+}
+
+.skills-section .text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.skills-section .cells .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 10px 20px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 5px;
+    margin: 10px;
+    gap: 10px;
+   /*box-shadow: 10px 10px var(--text-color);*/
+   box-shadow:
+    inset 
+    0 0 0 2px white,
+    0.3em 0.3em 1em black;
+}
+
+.skills-section .cells .cell img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+    
+}
+
+.skills-section .cells .cell span{
+    font-size: 18px;
+}
+
+/*Section 3: Testimony*/
+.testimony-section {
+padding: 0 50px;
+margin-bottom: 100px;
+border: 4px solid black;
+background-color: var(--text-color);
+margin-left: 20px;
+margin-right: 20px;
+box-shadow:
+    inset 0 -3em 3em rgba(0, 67, 200, 0.3),
+    0 0 0 2px white,
+    0.3em 0.3em 1em black;
+}
+
+.testimony-section h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+   
+    color: var(--background-color);
+    
+
+}
+
+.testimony-section .group {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    color: var(--background-color);
+
+}
+
+.testimony-section .group .person-details {
+    text-align: center;
+    flex: 2;
+}
+.testimony-section .group .text {
+    flex:8;
+    margin-bottom: 30px;
+}
+
+.testimony-section .group .person-details img {
+    aspect-ratio: 1/1;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.testimony-section .group .person-details p {
+    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 20px;
+
+}
+.testimony-section .group .person-details p:last-child {
+    font-weight: normal;
+    font-family:'Abril Fatface', sans-serif  ;
+} 
+
+
+/* Section 3.5 : Movies*/
+.movies-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+   
+}
+
+.movies-section h2 {
+    font-size: 30px;
+    padding-bottom: 30px;
+    
+
+}
+.movies-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    
+}
+
+.movies-section .cells .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    padding: 100px 20px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 10px;
+    margin: 10px;
+    gap: 30px;
+     background-color: rgb(19, 81, 139);
+     box-shadow:
+    inset 0 -3em 3em rgba(0, 200, 153, 0.3),
+    0 0 0 2px white,
+    0.3em 0.3em 1em black;
+    /*box-shadow: 10px 10px  var(--text-color);*/
+}
+
+.movies-section .cells .cell img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 10px;
+    width: 200px;
+    height: 300px;
+    justify-content: space-around;
+    gap: 60px;
+    flex-wrap: wrap;
+    
+}
+
+/*Section 4:contact*/
+.contact-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+    background-color: var(--text-color);
+    box-shadow:
+    inset 0 -3em 3em rgba(0, 67, 200, 0.3),
+    0 0 0 2px white,
+    0.3em 0.3em 1em black;
+}
+
+.contact-section h2 {
+    font-size: 35px;
+    color: var(--background-color);
+    padding-top: 30px;
+}
+
+.contact-section .group {
+    display: flex;
+    gap: 50px;
+   
+   
+}
+
+.contact-section .group .text {
+    flex: 3;
+    margin-top: 20px;
+    color: var(--background-color);
+}
+
+.contact-section .group form {
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    color: var(--background-color);
+}
+.contact-section .group form input,
+.contact-section .group form textarea{
+   font-family: 'Abril Fatface', sans-serif;
+   border: 2px solid var(--background-color);
+   background-color: var(--background-color);
+   padding: 10px;
+   margin-bottom: 15px;
+   outline: none;
+   resize: none;
+   
+}
+
+.contact-section .group form button {
+    font-size: 16px;
+    font-family: 'Abril Fatface', sans-serif;
+    color: white;
+    background-color:#4a83ee ;
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    transition: .1s;
+    margin-bottom: 30px;
+
+
+}
+
+.contact-section .group form button:hover {
+    filter: brightness(.9);
+}
+
+
+
+
+
+@media (max-width:850px) {
+    /*Section 1:hero*/
+    .hero-section .text h2 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width:740px) {
+    /*Section 1:hero*/
+    .hero-section {
+        flex-direction: column-reverse;
+    }
+
+    .hero-section .headshot img {
+        width: 300px;
+    }
+    /*Section 3: Testimony*/
+
+    .testimony-section   {
+        text-align: center;
+    
+    }
+
+    .testimony-section .group {
+        flex-direction: column;
+    }
+
+    /*Section 4:contact*/
+    .contact-section .group {
+       flex-direction: column;
+    }
+
+}
+
+@media (max-width:600px) {
+    /*NAVBAR */
+    nav{
+        padding: 0 20px;
+    }
+    nav .right a {
+    font-size: 22px;
+    }
+    nav .right a:last-child {
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+        padding-left: 0;
+
+
+    }
+   
+   
+    nav .right a span {
+        display: none;
+        
+    }
+    /*Section 1: hero */
+    .hero-section {
+        padding: 0 20px;
+    }
+
+    .hero-section .text h2 {
+        font-size: 30px;
+    }
+
+    /* Section 2:skills*/
+
+    .skills-section {
+        padding: 0 20px;
+        
+
+    }
+    .skills-section .cells .cell span {
+        font-size: 16px;
+
+    }
+
+    /* Section 3:Testimony*/
+    .testimony-section {
+        padding: 0 20px;
+    }
+
+     /*Section 4:contact*/
+     .contact-section {
+        padding: 0 20px;
+     }
+
+}
